@@ -25,6 +25,9 @@
                 <div class="buttons">
                     <a class="basic-style" href="{{route ("comics.create")}}">Crea un nuovo Fumetto</a>
                 </div>
+                <div class="buttons">
+                    <a class="basic-style" href="{{route ("home")}}">Torna alla Home</a>
+                </div>
             </div>
         </div>
         <div id="listMain">
