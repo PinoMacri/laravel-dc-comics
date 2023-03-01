@@ -84,6 +84,11 @@ main {
             }
         }
     }
+
+    .btn-home:hover {
+        color: goldenrod;
+        transform: scale(1.2);
+    }
 }
 
 #listMain {
@@ -144,5 +149,7 @@ main {
 
 
     }
+
+
 
 }

@@ -12,8 +12,4 @@ class HomeController extends Controller
         $comics=Comic::all();
         return view("home", compact("images","comics"));
     }
-   /*public function links(){
-        $links = config('menu');
-        return view("home", compact("images","comics"));
-    } */
 }

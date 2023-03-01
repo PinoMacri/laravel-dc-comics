@@ -16,10 +16,15 @@
                     </li>
                 @endforeach
             </ul>
-            <div class="buttons">
-                <button class="basic-style" :class="type">
-                    LOAD MORE
-                </button>
+            <div class="button-crea">
+                <div class="buttons">
+                    <button class="basic-style" :class="type">
+                        LOAD MORE
+                    </button>
+                </div>
+                <div class="buttons">
+                    <a class="basic-style" href="{{route ("comics.index")}}">Vai al Back-Office</a>
+                </div>
             </div>
         </div>
         <div id="listMain">

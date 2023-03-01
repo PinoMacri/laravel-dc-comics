@@ -40,8 +40,12 @@
             <label for="description">Descrizione</label>
             <textarea name="description" id="description" cols="150" rows="3"></textarea>
         </div>
-        <button>Invia</button>
+        <button class="basic-style">Invia</button>
     </form>
+    <div class="buttons">
+        <a class="basic-style btn-home" href="{{route("home")}}">Torna alla Home</a>
+    </div>
+  
 </div>
 </main>
 @endsection
