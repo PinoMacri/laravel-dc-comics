@@ -1,0 +1,29 @@
+//@import '~bootstrap/scss/bootstrap';
+@import 'fonts';
+@import 'header';
+@import 'jumbotron';
+@import 'main';
+@import 'footer';
+@import "show";
+
+//RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(37, 37, 37);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
