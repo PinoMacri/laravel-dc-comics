@@ -11,7 +11,7 @@
             </li>
             @foreach ($links as $link)
                 <li class="col">
-                    <a href="#">
+                    <a href="{{ $link === 'CHARACTERS' ? '/' : $link }}">
                         {{ $link }}
                     </a>
                 </li>
