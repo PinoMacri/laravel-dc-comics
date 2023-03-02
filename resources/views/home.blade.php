@@ -7,9 +7,9 @@
             </div>
         </div>
         <div class="container ">
-            <ul class="row">
+            <ul class="row ">
                 @foreach ($comics as $comic)
-                    <li>
+                    <li class="carding">
                         <img src="{{ $comic->thumb }}" alt="">
                         <h5>{{ $comic->title }}</h5>
                         <a class="scopri" href="{{ route('comics.show', $comic->id) }}">Scopri di più</a>

@@ -2,6 +2,29 @@ main {
     background-color: rgb(37, 37, 37);
     height: 780px;
 
+    form.btn-destroy {
+        text-align: center;
+        margin-left: 140px;
+        margin-top: -25px;
+    }
+
+    .delete-btn {
+        padding: 4px 20px;
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+
+        &:hover {
+            color: goldenrod;
+            cursor: pointer;
+        }
+    }
+
+    .carding {
+        margin: 40px;
+    }
 
     .scopri {
         text-transform: none;

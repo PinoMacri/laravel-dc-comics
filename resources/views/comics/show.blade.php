@@ -34,10 +34,11 @@
         <div class="button">
             <a class="btn" href="{{ route('home') }}">Torna Indietro</a>
             <a class="btn" href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
+            
             <form class="btn-destroy" action="{{route("comics.destroy", $comic->id)}}" method="POST">
-@csrf
-@method("DELETE")
-                <button type="submit">Elimina</button>
+            @csrf
+            @method("DELETE")
+                <button class="delete-btn" type="submit">Elimina</button>
             </form>
         </div>
         <div class="specifiche">

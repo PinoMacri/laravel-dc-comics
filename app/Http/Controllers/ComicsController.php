@@ -41,9 +41,9 @@ class ComicsController extends Controller
         return view("comics.edit", compact("comic"));
     }
 
-    public function update (Request $request, Comic $comic){
+    public function update (Request $request, string $id){
         $data=$request->all();
-
+        $comic=Comic::findOrFail($id);
         $comic->title=$data["title"];
         $comic->description=$data["description"];
         $comic->thumb=$data["thumb"];
@@ -53,7 +53,7 @@ class ComicsController extends Controller
         $comic->type=$data["type"];
         $comic->artists=$data["artists"];
         $comic->writers=$data["writers"];
-        $comic->save();
+        $comic->save(); 
         return to_route("comics.index" , $comic->id);
     }
     public function destroy(string $id){
