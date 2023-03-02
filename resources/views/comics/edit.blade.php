@@ -41,7 +41,7 @@
             <label for="description">Descrizione</label>
             <textarea name="description" id="description" cols="150" rows="3">{{old('description', $comic->description)}}</textarea>
         </div>
-        <button class="basic-style">Invia</button>
+        <button class="basic-style">Modifica</button>
     </form>
     <div class="buttons">
         <a class="basic-style btn-home" href="{{route("home")}}">Torna alla Home</a>
