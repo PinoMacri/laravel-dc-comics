@@ -11,7 +11,7 @@
             </li>
             @foreach ($links as $link)
                 <li class="col">
-                    <a href="{{ $link === 'CHARACTERS' ? '/' : $link }}">
+                    <a href="{{ $link === 'CHARACTERS' ? '/' : ($link === 'COMICS' ? 'http://127.0.0.1:8000/COMICS' : $link) }}">
                         {{ $link }}
                     </a>
                 </li>
