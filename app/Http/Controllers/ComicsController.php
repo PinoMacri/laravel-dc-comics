@@ -43,7 +43,7 @@ class ComicsController extends Controller
 
     public function update (Request $request, Comic $comic){
         $data=$request->all();
-        $comic=new Comic();
+
         $comic->title=$data["title"];
         $comic->description=$data["description"];
         $comic->thumb=$data["thumb"];
