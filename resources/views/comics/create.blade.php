@@ -6,7 +6,7 @@
     @csrf
         <div class="col-fumetto">
             <label for="title">Titolo</label>
-            <input type="text" id="title" name="title" placeholder="Titolo del fumetto"> 
+            <input type="text" name="title"  id="title" placeholder="Titolo del fumetto"> 
         </div>
         <div class="col-thumb">
             <label for="thumb">Logo</label>
